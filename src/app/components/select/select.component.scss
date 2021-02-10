@@ -1,0 +1,15 @@
+.from-item{
+    width: 100%;
+}
+.form-box{
+    margin-bottom: 2rem;
+    &.btns{
+        margin-bottom: 3rem;
+    }
+}
+.center{   
+     text-align: center;
+     display: block;
+     margin-left : auto;
+     margin-right : auto;
+}

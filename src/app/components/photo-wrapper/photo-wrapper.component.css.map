@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,MAAM,EAAE,SAAS;CACpB;;AACD,AAAA,MAAM,CAAA;EACF,MAAM,EAAE,SAAS;EACjB,OAAO,EAAE,KAAK;CACjB",
+    "sources": [
+        "photo-wrapper.component.scss"
+    ],
+    "names": [],
+    "file": "photo-wrapper.component.css"
+}

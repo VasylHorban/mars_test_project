@@ -1,0 +1,28 @@
+<form #selectForm = "ngForm" onsubmit="return false;">
+  <div class = "form-box btns center">
+  <mat-button-toggle-group  #riverType [(ngModel)] = "userInput.rover" name="rover-type" aria-label="Rover type">
+    <mat-button-toggle value="curiosity">Curiosity</mat-button-toggle>
+    <mat-button-toggle value="opportunity">Opportunity</mat-button-toggle>
+    <mat-button-toggle value="spirit">Spirit</mat-button-toggle>
+  </mat-button-toggle-group>
+  </div>
+  <div class = "form-box">
+<mat-form-field appearance="fill" class = "from-item">
+  <mat-label>Choose camera</mat-label>
+  <mat-select #camerasSelect [disabled] = "!userInput.rover" [(ngModel)] = "userInput.camera" name= "cameras">
+    <mat-option *ngFor="let camera of cameras[userInput.rover]" name="camera"  [value]="camera">
+      {{camera}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+</div>
+<div class = "form-box">
+  <mat-form-field appearance="fill" class = "from-item">
+    <mat-label>Write the day after landing on Mars</mat-label>
+    <input pattern = "\d{1,10}" [disabled] = "!userInput.camera" name="day" #day matInput type="text" [(ngModel)]="userInput.day">
+  </mat-form-field>
+
+</div>
+<button class = "center" (click) = "get()" [disabled] = "!userInput.day" mat-flat-button color="primary">Primary</button>
+</form>

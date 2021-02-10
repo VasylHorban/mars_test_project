@@ -1,0 +1,19 @@
+.from-item {
+  width: 100%;
+}
+
+.form-box {
+  margin-bottom: 2rem;
+}
+
+.form-box.btns {
+  margin-bottom: 3rem;
+}
+
+.center {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=select.component.css.map */

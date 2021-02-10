@@ -1,0 +1,8 @@
+<div (window:resize) = "resize($event)">
+<mat-grid-list  [cols]="row" rowHeight="2 : 1">
+  <mat-grid-tile @fade class = "photo-item" *ngFor = "let photo of paginationPhotos" >
+    <img [src]="photo">
+  </mat-grid-tile>
+</mat-grid-list>
+<button @fade *ngIf = "paginationPhotos.length" mat-flat-button color="accent" (click) = "load()">Load more</button>
+</div>
